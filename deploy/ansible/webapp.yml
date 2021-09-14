@@ -1,4 +1,4 @@
-- hosts: dev
+- hosts: localhost
   connection: local
   vars:
     resource_group: "{{ lookup('env', 'RES_GROUP') }}"
@@ -6,11 +6,6 @@
     plan_name: ahmis-sp
     location: westeurope
   tasks:
-    - name: Create a resource group
-      azure_rm_resourcegroup:
-        name: "{{ resource_group }}"
-        location: "{{ location }}"
-
     - name: Create App Service on Linux with Java Runtime
       azure_rm_webapp:
         resource_group: "{{ resource_group }}"
