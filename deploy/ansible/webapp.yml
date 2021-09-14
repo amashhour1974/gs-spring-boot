@@ -1,4 +1,3 @@
-- name: Create Azure VM
 - hosts: dev
   connection: local
   vars:
