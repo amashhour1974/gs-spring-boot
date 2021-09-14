@@ -18,7 +18,7 @@ node {
                                     clientSecretVariable: 'AZURE_SECRET',
                                     tenantIdVariable: 'AZURE_TENANT')]) {
                                     
-      ansiblePlaybook credentialsId: 'ansible-dev3', installation: 'ansible', inventory: 'dev.env', playbook: 'deploy/ansible/webapp.yml'                                
+                                   
       ansiblePlaybook installation: 'ansible',
       playbook: 'deploy/ansible/webapp.yml'
     }
