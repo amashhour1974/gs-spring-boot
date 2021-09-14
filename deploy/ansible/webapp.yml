@@ -1,4 +1,5 @@
-- hosts: deploy/ansible/dev.env
+- name: Create Azure VM
+  hosts: deploy/ansible/dev.env
   connection: local
   vars:
     resource_group: "{{ lookup('env', 'RES_GROUP') }}"
