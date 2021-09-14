@@ -1,4 +1,4 @@
-- hosts: 20.103.160.155
+- hosts: deploy/ansible/dev.env
   connection: local
   vars:
     resource_group: "{{ lookup('env', 'RES_GROUP') }}"
