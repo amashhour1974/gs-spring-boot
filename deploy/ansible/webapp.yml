@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: 20.103.160.155
   connection: local
   vars:
     resource_group: "{{ lookup('env', 'RES_GROUP') }}"
