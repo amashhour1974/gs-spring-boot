@@ -7,7 +7,7 @@ node {
     sh '''
         cd complete
         mvn clean package
-        mv target/*.war ROOT.war
+        
     '''
   }
 
